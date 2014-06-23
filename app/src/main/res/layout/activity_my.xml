@@ -1,0 +1,54 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Máximo de intentos:"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextIntentos" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repetir colores"
+        android:id="@+id/checkBox"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="guardarConfiguracion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="recuperarConfiguracion" />
+
+</LinearLayout>
